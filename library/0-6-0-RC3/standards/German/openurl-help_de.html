@@ -1,0 +1,30 @@
+<HTML><BODY>
+
+<H2><font color="#8B0000">URL-Datei-Verbindung</font></H2>
+
+<H3><font color="#005FBF">Allgemein</font></H3>
+
+Mit der <b>URL-Datei-Verbindung</b> sind Sie in der Lage, Passwort-Datenbanken zu öffnen, die sich auf einer entfernten Resource befinden und über eines der Internetprotokolle HTTP oder FTP erreichbar sind. Mit dieser Vorrichtung sind ein paar Einschränkungen verbunden. Die über HTTP geladenen Dateien können nur gelesen, nicht aber gespeichert werden. Über FTP geladene Dateien können nach Änderungen auch gespeichert werden, jedoch ist es gegenwärtig nicht möglich, neue Dateien anzulegen. 
+
+<H3><font color="#005FBF">Sicherheitsbedenken</font></H3>
+
+Generell ist es sehr gefährlich, sicherheitssensible Daten auf einer öffentlich zugänglichen Resource zu hinterlegen, wie gut die verwendete Verschlüsselungstechnik auch immer sein mag. Diese Vorrichtung wurde für Leute geschaffen, die sie unbedingt brauchen oder die möglicherweise ein privates Netz benutzen, das sie für sicher genug halten.
+
+<P>Falls Sie eine Passwort-Datenbank auf eine Internet-Resource legen wollen, sollten Sie unbedingt darauf achten, die bestmöglichen Sicherheitseinstellungen für die Datei zu verwenden. Das Zugangspasswort (geheimer Schlüssel) sollte nach meiner Überzeugung ein zufallsgenerierter Schlüssel von mindestens 10 Zeichen Länge sein. Worte aus dem Wörterbuch müssen unbedingt vermieden werden!
+
+<H3><font color="#005FBF">Kontrollelemente</font></H3>
+
+Das editierbare Auswahlfeld <b><font color="red">URL</font></b> akzeptiert jeden gültigen URL-Ausdruck. Das Feld erinnert darüber hinaus bis zu 8  erfolgreich durchgeführte Aufträge, wenn die Option "<b>Liste der zuletzt geöffneten Dateien verwenden</b>" in den Programm-Optionen aktiviert ist.
+
+<P>Die <b><font color="red">Löschen</font></b>-Schaltfläche entfernt alle Einträge aus der URL-Auswahlliste. 
+
+<H3><font color="#005FBF">Durchführung</font></H3>
+
+Die <b><font color="red">OK</font></b>-Schaltfläche startet die Durchführung und schließt diesen Dialog. Abhängig von Ihrer Internet-Verbindung kann es einige Sekunden dauern, bis eine Antwort angezeigt wird. (Sie können den Arbeitsstatus an dem kleinen Radzeichen in der rechten unteren Ecke des Programmfensters erkennen.)
+
+<P>Wenn Sie eine FTP-Adresse eingegeben haben, wird die folgende Antwort wahrscheinlich eine Login-Anfrage der FTP-Liegenschaft sein. Der Benutzername und das Passwort dazu werden in ein einziges Textfeld eingegeben, und zwar in der Schreibform <font color="#005FBF">&lt;Benutzer&gt;:&lt;Passwort&gt;</font>.
+Beispiel: Wenn der Benutzername "lolamontez" und das Passwort "123456" ist, so lautet die korrekte Eingabe <font color="#005FBF">lolamontez:123456</font>. Zu Ihrem Komfort erinnert <i><b>JPasswords</b></i> die FTP-Logins für die Dauer einer einzelnen Programmsitzung.
+
+<P>Nachdem eine Verbindung zu der Datei aufgebaut wurde, erfolgt die Passwort-Abfrage und die Datenbank kann in den Arbeitsbereich geladen werden.
+
+</BODY></HTML>

@@ -1,0 +1,30 @@
+<HTML><BODY>
+
+<H2><font color="#8B0000">URL FILE LINK</font></H2>
+
+<H3><font color="#005FBF">General</font></H3>
+
+With the <b>URL File Link</b> facility you can open a password database which is located on a remote resource that can be reached via HTTP or FTP protocol on the Internet. There are some restrictions connected to using this facility. HTTP loaded files can only be read but not written. FTP loaded files can also be written when modified, but new files currently cannot be created via this channel. 
+
+<H3><font color="#005FBF">Security Considerations</font></H3>
+
+In general, posting any security-sensitive data on public available resources is a severe hazard. Even the best encryption used does not change this simple rule. This facility has been made available for people who think they desperately need it or who might use a private network they deem secure enough. 
+
+<P>In case you decide to post a password database on an Internet resource, you should make sure to set up the best possible security settings for this file. In my conviction, the access password (secret key) should be random generated and have a length of at least 10 characters. Dictionary words must be avoided!
+
+
+<H3><font color="#005FBF">Control Elements</font></H3>
+
+The editable choice field <b><font color="red">URL</font></b> accepts any valid URL notation. Furthermore the field memorises up to 8 successful orders if option "<b>use recent file list</b>" is activated in program preferences.
+
+<P>The <b><font color="red">Clear</font></b> button removes all entries from the URL choice list. 
+
+<H3><font color="#005FBF">Operation</font></H3>
+
+The <b><font color="red">OK</font></b> button will start operation and close this dialog. Depending on your Internet connection, it may take some seconds until a response is shown. (You can observe the working status by the small wheel sign on the lower right corner of the program window.)
+
+<P>If you entered an FTP address the next response is likely to be a login request from the FTP site. Both username and password for the site have to be entered into a single text field with a formal notation of <font color="#005FBF">&lt;username&gt;:&lt;password&gt;</font>. Example: if the user name is "lolamontez" and the password is "123456" then the correct input goes <font color="#005FBF">lolamontez:123456</font>. For you convenience, <i><b>JPasswords</b></i> remembers FTP logins during a single program session.
+
+<P>After a connection to the file has been established, the password request is shown and the database can be loaded into the workshelf.
+
+</BODY></HTML>

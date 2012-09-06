@@ -1,0 +1,50 @@
+<HTML><BODY>
+
+<H2><font color="#8B0000">User Release Notes for Version 0-6-0 RC1</font></H2>
+
+The following list comprises the most important modified or new features of <i>JPasswords 0-6-0</i> from a user's viewpoint. <!--A more detailed list can be found in the technical release notes bundles with the installation or available at the project sourcepage.-->
+Please enjoy the improved stability of the display and the multitude of benefitial new features of this pre-release. If I may ask you, please aid me by reporting back bugs or problems you may run into. Thank you! - Also, I am interested in your experiences with <i>JPasswords</i> and to hear your striking new ideas! 
+
+<br><H3>New Features</H3>
+<OL>
+<LI><b>Multi-File Desktop</b><br>Multiple files (up to 64) can now be opened in the new multi-file desktop modus. Each file is kept within an internal frame and can be dealt with individually, minimised/maximised or used for data exchange. There are now two basic desktop modi: SINGLE-FILE and MULTI-FILE which can be toggled at a toolbar icon or in the menu. There also is an option in Program Preferences allowing to switch off this new feature.</LI>
+
+<br><LI><b>Drag & Drop of Items</b><br>The long-awaited drag and drop of entries facility may now take place both within a single file or between two simultanously open files. Drag objects can be single database entries, groups of entries or any user-selected sets of entries. Please note that this feature is designed and tested for JVM 1.5 (5). If you encounter problems using Drag & Drop in a later JVM version (e.g. 6), please use the project's installation packages in order to run the program in a private JRE 1.5 environment.</LI>
+
+<br><LI><b>Entry Category: Favourites</b><br>Database entries may now be marked as "Favourites" in the record editor or via context menu in list view of a database. Favourites can get quickly accessed after opening a database by filtering for "Favourites". This filtering can be instantly triggered through a new toolbar icon or by pressing CTRL-B on the keyboard. The use of Favourites can be switched off in program preferences.</LI>
+
+<br><LI><b>Find-As-You-Type</b><br>CTRL-S on the keyboard initiates a new and comfortable search function built into the display frame of a database. Search results are listed in a dynamic filtering modus just while you type your search string. Moreover, search strings can get memorised and will be auto-completed during input. This combination of features provides the quickest possible search method available. </LI>
+
+<br><LI><b>Enhanced and Customisable Toolbar</b><br>Program toolbar has been amplified with several new icons which are not all visible by default. The toolbar can be customised through a simple context menu available by right-click on the toolbar. Have fun! (Availability of icons may depend on settings in program preferences.)</LI>
+
+<br><LI><b>Enhanced Entry Features</b><br>A new text field has been integrated into the entry data record: "Email". There is no specific purpose linked to it and it may be used to the user's discretion. (As this field was originally my idea - but <i>PasswordSafe</i> published it earlier :) - the intended purpose here was to rather store my own email address which I make available at the target sites. But this of course is a personal choice.) - Furthermore JPWS 0.6.0 complies to a new format of the <i>PasswordSafe</i> database, V 3.6, and allows some added comfort in setting up periods of password expiry time.</LI>
+
+<br><LI><b>Enhanced Data Safety: Automatic File Mirroring</b><br>To protect you against data loss through unexpected program termination, dramatically enhanced security has been implemented. This comprises record editing and mirroring of modified file states into security copies in the background. This all is done without bothering the user of this logic. In case of an unexpected shutdown, these mirrors are automatically identified and offered to substitute or merge with the user's database in the next session. What more can you wish? - This feature may get switched off in program preferences.</LI>
+
+<br><LI><b>Enhanced PORTABLE Modus</b><br>The meanwhile famous <i>JPassword</i> Portable Modus allows you to run your password safe in the same environment on a USB-stick or diskette while moving around on various hosts. Some glitches in <i>Mac-OS</i> have been removed and makes the program more easily available there. Beside improved stability of the feature, it is now very simple to create a PORTABLE program installation on a removable medium. Go to "Help->Create Portable Installation" and after a few settings you are done!</LI>
+
+<br><LI><b>Global Password Generator</b><br>A password generator has been made available on the global level (outside of record editor) including a separate password policy assigned to it. Generated passwords stay inside a window and can optionally be copied into the system clipboard. This gives you a qualified tool at hand, rendering, to the best of my knowledge, cryptographically valid random generation. (Legal disclaimer!)</LI>
+
+<br><LI><b>ESCAPE Button "Offensive"</b><br>The ESCAPE button as a closing/termination trigger is now available on most of the windows, dialogs and filtering functions of the program. This makes handling a lot smoother. As a general rule, filtering functions can also get terminated by repeatedly pressing their init key.</LI>
+
+
+<br><LI><b>Windows Installer and Executable</b><br>In order to spread popularity of <i>JPasswords</i>, a Windows Executable has been created for download (using <i>Launch4J</i> project) which requests a Java Virtual Machine being installed on the target computer. A complete Windows Installer is in the planning! <!--Alternatively, a complete Windows installer is available for download which contains Java VM redistributables to be installed as a private runtime environment for the <i>JPasswords</i> program. The new Windows installer should allow any non-expert Windows user to easily install and use <i>JPasswords</i> (Windows-XP and later).--></LI>
+
+<br><LI><b>New LAF Entries</b><br>New Look-and-Feel abstract names "CROSS-PLATFORM" and "NATIVE" have been introduced, which are selectable just as any "natural" LAF. These names are comfortable for users who run a program setup in the PORTABLE Modus, as they can avoid setting up different Look-and-Feels by direct reference on the long course of their OS environments. Furthermore, "PgsLookAndFeel" (PagoSoft) has been - experimentally - added to available LAFs of <i>JPasswords</i>.</LI>
+
+<p><a href="http://sourceforge.net/tracker/?group_id=145245">Bug and Feature Tracker</a>
+<br><a href="http://sourceforge.net/apps/ideatorrent/jpws/">Idea Torrent</a>
+<br><a href="http://sourceforge.net/apps/aguestbook/jpws/">Guestbook</a>
+
+</OL>
+<H3>Major Resolved Bugs</H3>
+<OL>
+<LI><b>Program does not close on Mac OS X [Tracker-ID 1265649]</b><br>Under some conditions JPasswords did not terminate after signaling termination. This problem has been completely fixed. (Tell me if not!)</LI>
+
+<br><LI><b>Entries without passwords are deleted when saving. [Tracker-ID 2207220]</b><br>This expected but undesirable behaviour of JPasswords has been largely improved. Details of the new implemeted policy towards invalid records can be seen at the <a href="http://sourceforge.net/tracker/?func=detail&aid=2207220&group_id=145245&atid=761257">tracker item thread</a>.</LI>
+
+<br><LI><b>Hides the information window in Linux JVM [Tracker-ID 2553938]</b><br>Special behaviour of native Linux LAF. This problem has been completely fixed and Linux windowing is now as wonderful as it has never been before! </LI>
+</OL>
+
+
+</BODY></HTML>
